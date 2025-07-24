@@ -51,6 +51,16 @@ This project focuses on performing customer segmentation for an online retail da
 ## Data Source
 The dataset used for this project is the "Online Retail" dataset, which contains transactional data from a UK-based online retail store.
 - **Source:** [Kaggle](https://www.kaggle.com/datasets/vijayuv/onlineretail)
+- **Dataset Features**
+The dataset contains the following columns:
+    * `InvoiceNo`: Invoice number. A 6-digit integral number uniquely assigned to each transaction. If this code starts with 'C', it indicates a cancellation.
+    * `StockCode`: Product (item) code. A 5-digit integral number uniquely assigned to each distinct product.
+    * `Description`: Product (item) name.
+    * `Quantity`: The quantity of each product per transaction. Negative values indicate returns.
+    * `InvoiceDate`: Invoice Date and time. The day and time when each transaction was generated.
+    * `UnitPrice`: Unit price. Product price per unit in sterling (£).
+    * `CustomerID`: Customer number. A 5-digit integral number uniquely assigned to each customer.
+    * `Country`: Country name. The name of the country where each customer resides.
 
 ## Technologies Used
 - **Python 3.13**
