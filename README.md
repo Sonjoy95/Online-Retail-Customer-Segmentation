@@ -50,7 +50,7 @@ This project focuses on performing customer segmentation for an online retail da
 
 ## Data Source
 The dataset used for this project is the "Online Retail" dataset, which contains transactional data from a UK-based online retail store.
-- **Source:** UCI Machine Learning Repository or Kaggle (ensure you download Online Retail.xlsx and convert to Online Retail.csv or download the CSV version directly from the repository).
+- **Source:** [Kaggle](https://www.kaggle.com/datasets/vijayuv/onlineretail)
 
 ## Technologies Used
 - **Python 3.13**
