@@ -79,8 +79,8 @@ To replicate the results or run the code:
 
 3.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/Sonjoy95/Online-Retail-Customer-Segementation.git
-    cd Online-Retail-Customer-Segementation
+    git clone https://github.com/Sonjoy95/Online-Retail-Customer-Segmentation.git
+    cd Online-Retail-Customer-Segmentation
     ```
 
 4.  **Install Dependencies:**
