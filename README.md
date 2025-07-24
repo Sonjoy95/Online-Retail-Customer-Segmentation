@@ -51,7 +51,7 @@ This project focuses on performing customer segmentation for an online retail da
 ## Data Source
 The dataset used for this project is the "Online Retail" dataset, which contains transactional data from a UK-based online retail store.
 - **Source:** [Kaggle](https://www.kaggle.com/datasets/vijayuv/onlineretail)
-- **Dataset Features**
+- **Dataset Features:**
 The dataset contains the following columns:
     * `InvoiceNo`: Invoice number. A 6-digit integral number uniquely assigned to each transaction. If this code starts with 'C', it indicates a cancellation.
     * `StockCode`: Product (item) code. A 5-digit integral number uniquely assigned to each distinct product.
