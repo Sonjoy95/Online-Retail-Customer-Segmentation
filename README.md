@@ -4,48 +4,48 @@ This project focuses on performing customer segmentation for an online retail da
 
 ## Key Features and Steps
 1. #### **Data Loading & Initial Exploratory Data Analysis (EDA):**
- - Imported the `OnlineRetail.csv` dataset, handling potential encoding issues.
- - Conducted a thorough initial EDA, including:
-  * `df.info()` for data types and non-null counts.
-  * `df.describe()` for statistical summaries of numerical features.
-  * Missing value analysis.
-  * Statistical summaries of categorical features (value_counts()).
+  - Imported the `OnlineRetail.csv` dataset, handling potential encoding issues.
+  - Conducted a thorough initial EDA, including:
+    * `df.info()` for data types and non-null counts.
+    * `df.describe()` for statistical summaries of numerical features.
+    * Missing value analysis.
+    * Statistical summaries of categorical features (value_counts()).
 
 
 2. #### **Data Preprocessing & Cleaning:**
- - Dropped rows with missing `CustomerID.`
- - Removed canceled orders (identified by 'C' in `InvoiceNo`).
- - Converted InvoiceDate to datetime objects.
- - Calculated `TotalPrice` (`Quantity * UnitPrice`).
- - Filtered out transactions with non-positive `Quantity` or `UnitPrice` to ensure valid sales data.
+  - Dropped rows with missing `CustomerID.`
+  - Removed canceled orders (identified by 'C' in `InvoiceNo`).
+  - Converted InvoiceDate to datetime objects.
+  - Calculated `TotalPrice` (`Quantity * UnitPrice`).
+  - Filtered out transactions with non-positive `Quantity` or `UnitPrice` to ensure valid sales data.
 
 
 3. #### **EDA on Processed Data:**
- - `df.info` to display basic information about datset after preprocessing
- - Visualizations (histograms and box plots) for `Quantity`, `UnitPrice`, and `TotalPrice` after log1p transformation to address severe skewness and visualize distributions effectively.
- - Bar plots for top countries by transaction count.
+  - `df.info` to display basic information about datset after preprocessing
+  - Visualizations (histograms and box plots) for `Quantity`, `UnitPrice`, and `TotalPrice` after log1p transformation to address severe skewness and visualize distributions effectively.
+  - Bar plots for top countries by transaction count.
 
 
 4. #### **RFM Feature Engineering:**
- - Engineered three critical marketing metrics for each customer:
-  * **Recency:** Days since last purchase.
-  * **Frequency:** Number of unique purchases.
-  * **Monetary:** Total spending.
- - Applied outlier treatment to RFM features by capping values at the 5th and 95th percentiles to mitigate the influence of extreme values on clustering.
- - Scaled the RFM features using `StandardScaler` to ensure all features contribute equally to distance calculations in K-Means.
+  - Engineered three critical marketing metrics for each customer:
+    * **Recency:** Days since last purchase.
+    * **Frequency:** Number of unique purchases.
+    * **Monetary:** Total spending.
+  - Applied outlier treatment to RFM features by capping values at the 5th and 95th percentiles to mitigate the influence of extreme values on clustering.
+  - Scaled the RFM features using `StandardScaler` to ensure all features contribute equally to distance calculations in K-Means.
 
 
 5. #### **Optimal Cluster Determination & K-Means Clustering:**
- - Utilized the Elbow Method (WCSS vs. K) and Silhouette Score (average silhouette score vs. K) to determine the optimal number of clusters.
- - **Chosen K=4** based on a balance between statistical metrics and the desire for richer, more actionable customer segments for marketing purposes.
- - Applied the K-Means algorithm to segment customers into these four distinct groups.
+  - Utilized the Elbow Method (WCSS vs. K) and Silhouette Score (average silhouette score vs. K) to determine the optimal number of clusters.
+  - **Chosen K=4** based on a balance between statistical metrics and the desire for richer, more actionable customer segments for marketing purposes.
+  - Applied the K-Means algorithm to segment customers into these four distinct groups.
 
 
 6. #### **Cluster Analysis & Visualization:**
- - Calculated and analyzed the mean RFM values for each cluster to profile their unique characteristics.
- - Visualized the customer segments using:
-  * A 2D PCA-reduced scatter plot, clearly showing customer distribution, with cluster centroids marked and a legend displaying descriptive segment names (e.g., "Loyal Big Spenders").
-  * Bar plots illustrating the average Recency, Frequency, and Monetary values for each cluster, providing clear visual comparisons.
+  - Calculated and analyzed the mean RFM values for each cluster to profile their unique characteristics.
+  - Visualized the customer segments using:
+    * A 2D PCA-reduced scatter plot, clearly showing customer distribution, with cluster centroids marked and a legend displaying descriptive segment names (e.g., "Loyal Big Spenders").
+    * Bar plots illustrating the average Recency, Frequency, and Monetary values for each cluster, providing clear visual comparisons.
 
 
 ## Data Source
