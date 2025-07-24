@@ -70,7 +70,7 @@ To replicate the results or run the code:
 
 1. **Create a virtual environment (recommended):**
      ```bash
-     python -m venv your_venv_name  # This code will create virtual environment
+     python -m venv your_venv_name  # This code will create virtual environment named your_venv_name
      # Activation on Windows (use command prompt or power shell)
      .\your_venv_name\Scripts\activate
      # Activation on macOS/Linux (use terminal)
@@ -80,7 +80,7 @@ To replicate the results or run the code:
 3.  **Clone the Repository:**
     ```bash
     git clone https://github.com/Sonjoy95/Online-Retail-Customer-Segementation.git
-    cd Inline-Retail-Customer-Segementation
+    cd Online-Retail-Customer-Segementation
     ```
 
 4.  **Install Dependencies:**
@@ -88,7 +88,7 @@ To replicate the results or run the code:
     pip install -r requirements.txt
     ```
 
-5.  **Place Data:** Ensure `train.csv` is in the project's root directory or provide the dataset path to pandas `read_csv`.
+5.  **Place Data:** Ensure `OnlineRetail.csv` is in the project's root directory or provide the dataset path to pandas `read_csv` in Jupyter Notebook.
 
 7.  **Execute Code:** Run the Python scripts from jupyter notebook sequentially. The script will print various analyses and display several plots.
 
