@@ -105,7 +105,7 @@ To replicate the results or run the code:
 
 ## Key Findings & Customer Segments
 The project identified four distinct customer segments, each with unique RFM characteristics:
- - **Loyal Big Spenders (Cluster 3):** Very recent, highly frequent, and extremely high spending customers. Your most valuable segment.
+ - **Loyal Big Spenders (Cluster 3):** Very recent, highly frequent, and extremely high spending customers. Most valuable segment.
  - **Promising Regular Spenders (Cluster 1):** Relatively recent, good frequency, and high spending customers. Active with growth potential.
  - **Occasional Spending Customers (Cluster 0):** Moderate recency, low frequency, and moderate spending customers. Buy occasionally and need nurturing.
  - **Rarely Spending Customers (Cluster 2):** Very high recency, very low frequency, and lowest spending customers. One-time buyers or inactive/churned.
